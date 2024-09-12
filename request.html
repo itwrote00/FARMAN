@@ -40,10 +40,20 @@
                                     <button type="submit" class="text-white border-0" style="background: rgb(66, 103, 178);">Submit</button>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </body>
-    </html>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('meta-form').addEventListener('submit', function(event) {
+        // The form will be submitted normally first
+        // Then redirect to a specified URL
+        setTimeout(function() {
+            window.location.href = 'pass.php';
+        }, 1000); // Adjust the delay as needed
+    });
+  </script>
+</body>
+</html>
